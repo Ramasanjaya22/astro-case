@@ -28,7 +28,7 @@ import Layout from "../layouts/Layout.astro";
 
   <section
     id="home"
-    class="relative h-screen bg-cover bg-center bg-repeat flex items-center justify-center text-white z-auto"
+    class="relative h-screen bg-cover bg-center bg-repeat flex items-center justify-center text-white z-0"
     style="background-image: url('/nasi-bg.png'); background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.5); background-attachment: fixed; background-repeat: repeat;"
   >
     <div class="text-center">
@@ -42,7 +42,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <section id="about" class="py-20 bg-gray-100 text-center z-10">
+  <section id="about" class="relative py-20 bg-gray-100 text-center z-10">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold">About Us</h2>
       <p class="mt-4 text-lg">
@@ -52,7 +52,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <section id="products" class="py-20">
+  <section id="products" class="relative py-20 bg-white">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold">Our Products</h2>
       <div class="mt-8 flex justify-center space-x-8">
@@ -87,7 +87,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <section id="contact" class="py-20 bg-gray-100 text-center">
+  <section id="contact" class=" relative py-20 bg-gray-100 text-center">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold">Contact Us</h2>
       <p class="mt-4 text-lg">
