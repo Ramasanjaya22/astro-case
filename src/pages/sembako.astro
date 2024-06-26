@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
 ---
 
 <Layout title="Sembako">
@@ -55,33 +54,12 @@ import Layout from "../layouts/Layout.astro";
   <section id="products" class="relative py-20 bg-white">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold">Our Products</h2>
-      <div class="mt-8 flex justify-center space-x-8">
-        <div class="max-w-xs">
-          <img
-            src="/rice.png"
-            alt="Rice"
-            class="w-full rounded-lg shadow-lg"
-          />
-          <h3 class="mt-4 text-xl font-bold">Rice</h3>
-          <p class="mt-2">High-quality, packaged rice.</p>
-        </div>
-        <div class="max-w-xs">
-          <img
-            src="/sugar.png"
-            alt="Sugar"
-            class="w-full rounded-lg shadow-lg"
-          />
-          <h3 class="mt-4 text-xl font-bold">Sugar</h3>
-          <p class="mt-2">Pure, packaged sugar.</p>
-        </div>
-        <div class="max-w-xs">
-          <img
-            src="/cooking.png"
-            alt="Cooking Oil"
-            class="w-1/2 rounded-lg shadow-lg"
-          />
-          <h3 class="mt-4 text-xl font-bold">Cooking Oil</h3>
-          <p class="mt-2">Premium quality, packaged cooking oil.</p>
+      <div class="mt-8 flex justify-center w-full space-x-8">
+        <div class="grid md:grid-cols-3 min-[560px]:grid-cols-1">
+          <div class="overflow-hidden" id="beras">
+            <img src="/beras.jpg" alt="Beras" class="object-cover w-full h-full transition-transform duration-300 transform hover:scale-110" /></div>
+          <div class="overflow-hidden"><img src="/minyak.jpg" alt="Minyak" class="object-cover w-full h-full transition-transform duration-300 transform hover:scale-110" /></div>
+          <div class="overflow-hidden"><img src="/gula.jpg" alt="Gula" class="object-cover w-full h-full transition-transform duration-300 transform hover:scale-110" /></div>
         </div>
       </div>
     </div>
