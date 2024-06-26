@@ -1,0 +1,113 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Sembako">
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4">
+      <div class="text-2xl font-bold">Sembako</div>
+      <ul class="flex space-x-6">
+        <li>
+          <a href="#home" class="text-gray-800 hover:text-blue-500">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="text-gray-800 hover:text-blue-500">About</a>
+        </li>
+        <li>
+          <a href="#products" class="text-gray-800 hover:text-blue-500"
+            >Products</a>
+        </li>
+        <li>
+          <a href="#contact" class="text-gray-800 hover:text-blue-500"
+            >Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section
+    id="home"
+    class="relative h-screen bg-cover bg-center bg-repeat flex items-center justify-center text-white z-auto"
+    style="background-image: url('/nasi-bg.png'); background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.5); background-attachment: fixed; background-repeat: repeat;"
+  >
+    <div class="text-center">
+      <h1 class="text-5xl font-bold">Welcome to Sembako Kemasan</h1>
+      <p class="mt-4 text-2xl">High Quality Packaged Food Products</p>
+      <a
+        href="#products"
+        class="mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"
+        >Our Products</a
+      >
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-gray-100 text-center z-10">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold">About Us</h2>
+      <p class="mt-4 text-lg">
+        We provide high-quality packaged food products to ensure freshness and
+        convenience for our customers.
+      </p>
+    </div>
+  </section>
+
+  <section id="products" class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Our Products</h2>
+      <div class="mt-8 flex justify-center space-x-8">
+        <div class="max-w-xs">
+          <img
+            src="/images/rice.jpg"
+            alt="Rice"
+            class="w-full rounded-lg shadow-lg"
+          />
+          <h3 class="mt-4 text-xl font-bold">Rice</h3>
+          <p class="mt-2">High-quality, packaged rice.</p>
+        </div>
+        <div class="max-w-xs">
+          <img
+            src="/images/sugar.jpg"
+            alt="Sugar"
+            class="w-full rounded-lg shadow-lg"
+          />
+          <h3 class="mt-4 text-xl font-bold">Sugar</h3>
+          <p class="mt-2">Pure, packaged sugar.</p>
+        </div>
+        <div class="max-w-xs">
+          <img
+            src="/images/oil.jpg"
+            alt="Cooking Oil"
+            class="w-full rounded-lg shadow-lg"
+          />
+          <h3 class="mt-4 text-xl font-bold">Cooking Oil</h3>
+          <p class="mt-2">Premium quality, packaged cooking oil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-gray-100 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold">Contact Us</h2>
+      <p class="mt-4 text-lg">
+        If you have any questions or would like to make an order, please contact
+        us at:
+      </p>
+      <p class="mt-2">Email: info@sembako.com</p>
+      <p class="mt-2">Phone: (123) 456-7890</p>
+    </div>
+  </section>
+
+  <footer class="py-4 bg-gray-800 text-white text-center">
+    <p>&copy; 2024 Sembako Kemasan. All rights reserved.</p>
+  </footer>
+</Layout>
+
+<script>
+  document.addEventListener("scroll", function () {
+  const parallax = document.querySelector("#home");
+  let scrollPosition = window.pageYOffset;
+  parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
+});
+</script>
